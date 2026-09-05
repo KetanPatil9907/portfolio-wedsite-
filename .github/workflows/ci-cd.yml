@@ -28,9 +28,9 @@ jobs:
             patil9907/portfolio:latest
             patil9907/portfolio:${{ github.sha }}
 
-      - name: Deploy to Kubernetes
+            - name: Deploy to Kubernetes
         run: |
           kubectl apply -f k8s/deployment.yaml
           kubectl apply -f k8s/service.yaml
-          kubectl rollout restart deployment/portfolio-deployment
+          kubectl set image deployment/portfolio-deployment portfolio=patil9907/portfolio:${{ github.sha }}
           kubectl rollout status deployment/portfolio-deployment
