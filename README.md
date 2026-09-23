@@ -22,7 +22,7 @@ This portfolio website showcases my:
 - 🚀 Projects
 - 💼 Experience
 - 📄 Resume
-- 📧 Contact information
+- 📧 Contact information  
 
 The main objective of this project is not only to create a portfolio website but also to implement a **Continuous Integration and Continuous Deployment (CI/CD) pipeline**.
 
